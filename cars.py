@@ -7,7 +7,7 @@ ENGINE_TYPE = {
 class EnvironmentalError(Exception):
 	pass 
 
-class Cars:
+class Car:
 	def __init__(self, brand, tank_capacity, tanked_fuel, engine_type):
 		if tank_capacity < tanked_fuel:
 			raise ValueError("You cannot have filled tank over its capacity!")
@@ -15,6 +15,7 @@ class Cars:
 		self.tank_capacity = tank_capacity
 		self.tanked_fuel = tanked_fuel
 		self.engine_type = ENGINE_TYPE[engine_type]
+		logging.basicConfig(level=logging.INFO)
 		logging.info(f'New car of brand {self.brand}, with tank full in {round(self.tanked_fuel/self.tank_capacity*100,1)}%.')
 
 	def fill_tank(self, liters = None):
