@@ -2,16 +2,16 @@
 
 ## Overview
 
-Cars is an object-oriented script that lets the user create a car with specified brand, engine type (gasoline or Diesel), tank capacity and tanked fuel.
+Cars is an object-oriented script written in Python 3.x that lets the user create a car with specified brand, engine type (gasoline or Diesel), tank capacity and tanked fuel.
 
 ## Class parameters
-* brand - name of a brand of a car
+* brand (string)- name of a brand of a car
 
-* engine_type - type of engine, 1 for gasoline, 0 for Diesel
+* engine_type (int(0,1))- type of engine, 1 for gasoline, 0 for Diesel
 
-* tank_capacity - capacity of car's tank
+* tank_capacity (int) - capacity of car's tank
 
-* tanked_fuel - amount of fuel in car's tank
+* tanked_fuel (int) - amount of fuel in car's tank
 
 
 ## Class methods
@@ -26,7 +26,7 @@ To use this script simply import this to Python interpreter
 
 To create a new car:
 
-      cars.Car("Brand", <number>, <number>, [0,1]) # where 1 is Gasoline and 0 is Diesel
+      cars.Car(brand, tank_capacity, tanked_fuel, engine_type)
 
 To fill tank of created car to full:
 
@@ -34,11 +34,11 @@ To fill tank of created car to full:
       
 To fill tank of created car for specified liters:
 
-      car.fill_tank(<number>)
+      car.fill_tank(liters)
 
-To empty tank to centrain percentage:
+To empty tank to centrain percentage (limit):
 
-      car.empty_tank(<number[0-1]>) # number must be between 0 and 1
+      car.empty_tank(limit)
       
 ## Exceptions
 
