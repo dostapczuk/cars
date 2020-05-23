@@ -5,18 +5,18 @@
 Cars is an object-oriented script that lets the user create a car with specified brand, engine type (gasoline or Diesel), tank capacity and tanked fuel.
 
 ## Class parameters
-brand - name of a brand of a car
+* brand - name of a brand of a car
 
-engine_type - type of engine, 1 for gasoline, 0 for Diesel
+* engine_type - type of engine, 1 for gasoline, 0 for Diesel
 
-tank_capacity - capacity of car's tank
+* tank_capacity - capacity of car's tank
 
-tanked_fuel - amount of fuel in car's tank
+* tanked_fuel - amount of fuel in car's tank
 
 
 ## Class methods
-fill_tank - filling tank of specified car, without parameter fills tank to maximum, with parameter fills tank with specified liters
-empty_tank - empties tank to centrain percentage, returns amount of lost liters. 
+* fill_tank - filling tank of specified car, without parameter fills tank to maximum, with parameter fills tank with specified liters
+* empty_tank - empties tank to centrain percentage, returns amount of lost liters. 
 
 ## Usage
 
