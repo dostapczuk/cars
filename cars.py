@@ -10,7 +10,7 @@ class EnvironmentalError(Exception):
 class Car:
 	def __init__(self, brand, tank_capacity, tanked_fuel, engine_type):
 		if tank_capacity < tanked_fuel:
-			raise ValueError("You cannot create car with fuel amount above its' tank capacity.")
+			raise ValueError("You cannot create car with fuel amount above its' tank capacity!")
 		self.brand = brand
 		self.tank_capacity = tank_capacity
 		self.tanked_fuel = tanked_fuel
